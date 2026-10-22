@@ -1,7 +1,9 @@
 # AutoRecon
+
 Toolkit kecil untuk recon dan web quick-audit.
 
 ## Tool 1: webaudit
+
 Audit cepat headers, CORS, dan TLS dari target URL.
 
 ### Tujuan
@@ -19,7 +21,7 @@ python3 webaudit.py <url> [--timeout 10] [--output out.json]
 - `--timeout` — timeout request dalam detik (default: 10)
 - `--output` — path file output JSON report
 
-### Preview output
+### Contoh output
 ```json
 {
   "timestamp": "2026-08-31 13:59:43 WIB",
@@ -53,10 +55,10 @@ python3 webaudit.py <url> [--timeout 10] [--output out.json]
 }
 ```
 
-### Contoh findings
+### Arti temuan
 - `HSTS missing` — header `Strict-Transport-Security` tidak ada
 - `CSP missing` — header `Content-Security-Policy` tidak ada
-- `X-Frame-Options missing` — tidak ada protection terhadap clickjacking
+- `X-Frame-Options missing` — tidak ada proteksi terhadap clickjacking
 - `XCTO missing` — tidak ada `X-Content-Type-Options: nosniff`
 - `CORS wildcard (*)` — `Access-Control-Allow-Origin: *` berisiko
 - `Weak TLS` — versi TLS di bawah 1.2
