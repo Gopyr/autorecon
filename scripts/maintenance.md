@@ -1,0 +1,1 @@
+- 2026-11-18 refactor: flatten nested conditionals
