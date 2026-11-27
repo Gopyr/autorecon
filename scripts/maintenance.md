@@ -1,1 +1,2 @@
 - 2026-11-18 refactor: flatten nested conditionals
+- 2026-11-27 perf: memoize expensive lookup
