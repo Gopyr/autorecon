@@ -1,0 +1,1 @@
+- 2026-11-27 perf: skip render when idle
